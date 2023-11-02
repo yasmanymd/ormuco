@@ -1,5 +1,5 @@
 
-## Omruco
+## Ormuco
 
 ### How to run the tests
 
