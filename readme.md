@@ -109,5 +109,7 @@ The message format utilized in the system is JSON. An example message is as foll
 }
 ```
 
-### Happy review
+Sorry for including in last exercise a simple integration test. I wanted to include more complex tests, even some test with mocks, but the time was limited. 
+
+### Thanks and happy review
 
