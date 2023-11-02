@@ -10,7 +10,7 @@ function wait(ms: number) {
 
 let m1: ICacheManager, m2: ICacheManager, m3: ICacheManager, m4: ICacheManager;
 
-describe('Test', () => {
+describe('Geolocation LRU Cache exercise', () => {
     beforeEach(async () => {
         let f1 = async () => {
             m1 = new CacheManager(new LRUCache(4, 5000), new Messenger("amqp://guest:guest@localhost:5672", "M1"));
@@ -43,7 +43,7 @@ describe('Test', () => {
         await m4.dispose();
     });
 
-    it('Test 1', async () => {
+    it('Testing cache with4 nodes and distributing info', async () => {
         m1.set("1", 1);
         m2.set("2", 2);
         m3.set("3", 3);
